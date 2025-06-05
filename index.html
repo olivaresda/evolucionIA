@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: La Fascinante Historia de la IA Generativa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F7F7F7; /* Light Gray Background */
+            color: #073B4C; /* Deep Indigo Primary Text */
+        }
+        .timeline-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #118AB2; /* Blue Green Accent */
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #FFD166; /* Sunglow Yellow Highlight */
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .timeline-left {
+            left: 0;
+        }
+        .timeline-right {
+            left: 50%;
+        }
+        .timeline-right::after {
+            left: -16px;
+        }
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .timeline-content h3 {
+            color: #118AB2; /* Blue Green Accent */
+        }
+        .timeline-content p {
+            color: #073B4C; /* Deep Indigo */
+        }
+        .timeline-content .year {
+            background-color: #06D6A0; /* Caribbean Green Highlight */
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .timeline-container::after {
+                left: 31px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-item::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+            .timeline-left::after, .timeline-right::after {
+                left: 15px;
+            }
+            .timeline-right {
+                left: 0%;
+            }
+        }
+
+        .icon-style {
+            display: inline-block;
+            font-size: 1.5rem;
+            margin-right: 8px;
+            color: #118AB2; /* Blue Green Accent */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    
+
+    <header class="bg-[#118AB2] text-white text-center py-12 px-4 shadow-lg">
+        <h1 class="text-4xl md:text-5xl font-bold mb-2">La Fascinante Historia de la IA Generativa</h1>
+        <p class="text-xl md:text-2xl font-light">Un viaje desde los conceptos iniciales hasta la revolución actual.</p>
+    </header>
+
+    <section class="py-10 px-4">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-[#073B4C] mb-4">¿Qué es la IA Generativa?</h2>
+            <p class="text-lg text-[#073B4C] leading-relaxed">
+                La Inteligencia Artificial Generativa es una rama de la IA que se enfoca en la creación de contenido nuevo y original. A diferencia de las IAs que analizan o clasifican datos, los modelos generativos <span class="font-semibold text-[#06D6A0]">aprenden patrones y estructuras</span> de los datos con los que son entrenados para luego producir resultados completamente nuevos, como imágenes, texto, música, e incluso código.
+            </p>
+        </div>
+    </section>
+
+    <div class="timeline-container">
+        
+        <div class="timeline-item timeline-left">
+            <div class="timeline-content">
+                <span class="year">1950</span>
+                <h3 class="text-2xl font-bold mb-2">El Test de Turing</h3>
+                <p class="text-sm"> <span class="icon-style">🤔</span>Alan Turing propone una prueba para determinar si una máquina puede exhibir un comportamiento inteligente indistinguible del de un humano. Aunque no es IA generativa per se, sienta las bases filosóficas sobre la inteligencia artificial.</p>
+                <p class="mt-2 text-xs text-[#EF476F] font-semibold">Impacto: Cuestiona la naturaleza de la inteligencia y la capacidad de las máquinas.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item timeline-right">
+            <div class="timeline-content">
+                <span class="year">1966</span>
+                <h3 class="text-2xl font-bold mb-2">ELIZA</h3>
+                 <p class="text-sm"><span class="icon-style">💬</span> Joseph Weizenbaum crea ELIZA, un programa que simula una conversación con un psicoterapeuta rogeriano. Es uno de los primeros chatbots y demuestra la capacidad de generar respuestas textuales coherentes (aunque limitadas).</p>
+                 <p class="mt-2 text-xs text-[#EF476F] font-semibold">Impacto: Pionero en el Procesamiento del Lenguaje Natural (PLN) y la interacción humano-máquina.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item timeline-left">
+            <div class="timeline-content">
+                <span class="year">1980s</span>
+                <h3 class="text-2xl font-bold mb-2">Modelos Basados en Reglas y Redes Neuronales Recurrentes (RNN)</h3>
+                <p class="text-sm"><span class="icon-style">🧱</span> Se exploran sistemas expertos y los fundamentos de las RNNs. Aunque la IA generativa aún no es un campo prominente, estas tecnologías son precursoras importantes para el modelado de secuencias, clave para la generación de texto y música.</p>
+                <p class="mt-2 text-xs text-[#EF476F] font-semibold">Impacto: Desarrollo de técnicas para procesar datos secuenciales.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item timeline-right">
+            <div class="timeline-content">
+                <span class="year">1997</span>
+                <h3 class="text-2xl font-bold mb-2">LSTM (Long Short-Term Memory)</h3>
+                <p class="text-sm"><span class="icon-style">🧠</span> Sepp Hochreiter y Jürgen Schmidhuber introducen las redes LSTM, una mejora significativa sobre las RNNs tradicionales, capaces de aprender dependencias a largo plazo en datos secuenciales. Esto es crucial para la generación de texto y música más coherente.</p>
+                <p class="mt-2 text-xs text-[#EF476F] font-semibold">Impacto: Avance clave para el modelado de lenguaje y otras secuencias complejas.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item timeline-left">
+            <div class="timeline-content">
+                <span class="year">2014</span>
+                <h3 class="text-2xl font-bold mb-2">GANs (Redes Generativas Antagónicas)</h3>
+                <p class="text-sm"><span class="icon-style">🖼️</span> Ian Goodfellow y su equipo presentan las GANs. Dos redes neuronales (un generador y un discriminador) "compiten" entre sí, mejorando drásticamente la calidad de las imágenes generadas artificialmente. Un hito para la IA generativa visual.</p>
+                <p class="mt-2 text-xs text-[#EF476F] font-semibold">Impacto: Revolución en la generación de imágenes realistas y otros datos.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item timeline-right">
+            <div class="timeline-content">
+                <span class="year">2017</span>
+                <h3 class="text-2xl font-bold mb-2">"Attention Is All You Need" - Transformers</h3>
+                <p class="text-sm"><span class="icon-style">⚡</span> Investigadores de Google introducen la arquitectura Transformer. Su mecanismo de "atención" permite modelar dependencias sin importar la distancia en los datos de entrada, superando a las RNNs en muchas tareas de PLN y convirtiéndose en la base de los grandes modelos de lenguaje (LLMs).</p>
+                <p class="mt-2 text-xs text-[#EF476F] font-semibold">Impacto: Arquitectura fundamental para la actual generación de modelos de IA.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item timeline-left">
+            <div class="timeline-content">
+                <span class="year">2018-2020</span>
+                <h3 class="text-2xl font-bold mb-2">El Ascenso de GPT</h3>
+                <p class="text-sm"><span class="icon-style">✍️</span> OpenAI lanza GPT (Generative Pre-trained Transformer), seguido por GPT-2 (2019) y GPT-3 (2020). Cada versión muestra un salto cualitativo en la capacidad de generar texto coherente, creativo y contextualmente relevante, abriendo un abanico de aplicaciones.</p>
+                <p class="mt-2 text-xs text-[#EF476F] font-semibold">Impacto: Demuestra el poder de los LLMs a gran escala y su potencial transformador.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item timeline-right">
+            <div class="timeline-content">
+                <span class="year">2021-2022</span>
+                <h3 class="text-2xl font-bold mb-2">Explosión de Modelos Multimodales y de Imagen</h3>
+                <p class="text-sm"><span class="icon-style">🎨</span> Surgen modelos como DALL-E (OpenAI) y luego Stable Diffusion y Midjourney, capaces de generar imágenes detalladas y artísticas a partir de descripciones textuales. ChatGPT (OpenAI, finales de 2022) populariza masivamente la IA conversacional avanzada.</p>
+                <p class="mt-2 text-xs text-[#EF476F] font-semibold">Impacto: La IA generativa se vuelve accesible y viral, capturando la imaginación del público.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item timeline-left">
+            <div class="timeline-content">
+                <span class="year">2023-Presente</span>
+                <h3 class="text-2xl font-bold mb-2">Consolidación y Avances Continuos</h3>
+                <p class="text-sm"><span class="icon-style">🚀</span> Se lanzan modelos aún más potentes y especializados como GPT-4 (OpenAI), Llama (Meta), Claude (Anthropic), y la familia Gemini (Google). Hay un fuerte enfoque en la multimodialidad (texto, imagen, audio, video), la eficiencia de los modelos, la IA responsable y la proliferación de modelos de código abierto. La velocidad de innovación sigue siendo asombrosa.</p>
+                <p class="mt-2 text-xs text-[#EF476F] font-semibold">Impacto: La IA generativa se integra en más herramientas y redefine industrias.</p>
+            </div>
+        </div>
+         <div class="timeline-item timeline-right">
+            <div class="timeline-content">
+                <span class="year">Futuro Cercano</span>
+                <h3 class="text-2xl font-bold mb-2">Hacia una IA Más Integrada y Autónoma</h3>
+                <p class="text-sm"><span class="icon-style">🌌</span> Se espera una mayor integración de la IA generativa en flujos de trabajo cotidianos, agentes autónomos capaces de realizar tareas complejas, avances en la personalización y la comprensión del contexto, junto con un debate continuo y necesario sobre la ética, la regulación y el impacto social.</p>
+                 <p class="mt-2 text-xs text-[#EF476F] font-semibold">Desafíos: Ética, regulación, desinformación, impacto laboral y la búsqueda de la AGI (Inteligencia General Artificial).</p>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="bg-white py-12 px-4 mt-10 shadow-inner">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-[#073B4C] mb-6">La Revolución Creativa está en Marcha</h2>
+            <p class="text-lg text-[#073B4C] leading-relaxed mb-4">
+                La historia de la IA generativa es un testimonio de la innovación humana. Desde simples programas que imitaban conversaciones hasta complejos sistemas capaces de crear arte y código, el viaje ha sido extraordinario y se acelera día a día.
+            </p>
+            <p class="text-lg text-[#118AB2] font-semibold">
+                ¡El futuro de la creación y la automatización inteligente apenas comienza!
+            </p>
+        </div>
+    </section>
+
+    <footer class="text-center py-8 bg-[#073B4C] text-gray-300 text-sm">
+        <p>&copy; <span id="year"></span> Infografía sobre la Historia de la IA Generativa.</p>
+        
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
